@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+*{box-sizing: border-box;}
+
+body{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #303539;
+}
+
+
+
+/* ---------- Estilos a la barra de Scroll---------------*/
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background:black;
+    
+}
+
+::-webkit-scrollbar-thumb{
+    background: #ffcc00;
+}
+
+
+
+/* -----------------------------------Estilos Boton WhatsApp ----------------------------------*/
+
+#btn{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    right:-10px;
+    position: fixed;
+}
+
+#btn #img{
+    height: 60px;
+    width: 60px;
+}
+/* ----------------------------------- Inicio Estilos Seccion 1--------------------------------*/
+section{
+    width: 100%;
+    height: 35px;
+    background-color:grey;
+    word-spacing: 0.25em;
+    position: fixed;
+    }
+
+.iconos{
+    float: right;
+    justify-content:space-between;
+    
+}
+
+.icono{
+    height: 20px;
+    width: 100px;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 ;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.img{
+    width: 22px;
+    height: 22px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    /*filter: invert(0.4); /*Propiedad de CSS que me permite colorear los iconos del header. */
+}
+
+.img:hover{
+    border-radius: 100%;
+    color: #F6CE29;
+    background-color: #F6CE29;
+}
+
+.info{
+    float: left;
+    line-height: 40px;
+    margin-left: 10px;
+    color: black;
+    font-weight:bold;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+}
+
+.info span:hover{
+    color: #F6CE29;
+    font-size: 18px;
+}
+
+.info a:hover{
+    color: #F6CE29;
+    font-size: 18px;
+}
+
+.info{
+    color:black;
+    text-decoration: none;
+
+}
+
+.info a{
+    text-decoration: none;
+    color:black;
+}
+
+/* ----------------------------------- Fin Estilos Seccion 1--------------------------------*/
+
+
+
+/* -----------------------------------Inicio Estilos Header|Encabezado---------------------*/
+
+header{
+    width: 100%;
+    height: 300px;
+    background-color: #29292A; 
+    margin: 0;
+}
+
+#logo{
+    width: 200px;
+    height: 200px;
+}
+
+
+#logo img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    left: 370px;
+}
+
+#titulo{
+    float: right;
+    position:absolute;
+    top: 100px;
+    left: 40%;
+}
+
+
+#titulo h1{
+    color: #F6CE29;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 40px;
+}
+
+#titulo h2{
+    color: #F6CE29; 
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    font-size: 40px;
+}
+
+hr{
+    background-color: white;
+    width: 100%;
+    height:0mm;
+    margin: 0;
+}
+
+
+/* --------------------------Estilo Barra de Navegación -----------------------------*/
+
+nav{
+    width: 100%;
+    height: 40px;
+    background-color: #29292A;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: -18px;
+
+}
+
+ul li{
+    color: white;
+    list-style: none;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 80px;
+    cursor: pointer;
+    height: 40px;
+    width: 300px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover{
+    color: #F6CE29;
+}
+
+ul li:hover{
+    color: #F6CE29;
+    border-top: 2px solid #F6CE29;
+    padding-bottom: -10px;
+    text-decoration: none;
+}
+
+
+
+/*-------------------- Estilos Seccion 2 - Imagenes Institucionales-------------*/
+
+figure{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.seccion2{
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: auto auto;/*Podemos colocarle un 3° valor.*/
+    grid-template-rows: 400px 400px;
+    grid-row-gap: 400px;
+}
+
+
+#logo5{
+    position: relative;
+}
+
+#logo3 img{
+    width: 100%;
+    height: 800px;
+    /*filter:brightness(0.4);*/
+    opacity: 0.4;
+}
+
+#logo5 img{
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+
+figure p{
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 100%;
+    left:20px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+#logo3{
+    position: relative;
+}
+
+.texto1{
+    position: absolute;
+    color: white;
+    top:30%;
+    left: 40px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight:normal;
+    padding: 30px;
+    letter-spacing: 3px;
+}
+
+.texto2{
+    position: absolute;
+    color:white;
+    top:30%;
+    right: 40px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: normal;
+    padding: 30px;
+    letter-spacing: 3px;
+}
+hr{
+    background-color: white;
+    width: 100%;
+    height:0mm;
+    margin: 0;
+}
+
+
+/*-------- Estilos Seccion 3 | Nuestros Servicios ----*/
+
+#servicios{
+    width: 100%;
+    height: 160px;
+    margin-top: -18px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+#servicios h3{
+    color: white;
+    margin: 40px;
+    font-family: 'Truculenta', sans-serif;
+    font-weight:normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+#servicios h2{
+    color: white;
+    margin: 40px;
+    font-family: 'Truculenta', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 40px;
+    display: inline-block;
+    margin-top: -1000px;
+    
+}
+
+#nota1{
+    background-color: #22292D;
+}
+
+#nota2{
+    background-color: #293136;
+}
+
+#nota3{
+    background-color:#22292D;
+}
+
+#nota4{
+    background-color: #293136;
+}
+
+
+
+/* ---------------- Estilos Sección 4 | Imagenes Nuestros Servicios -----------*/
+
+#img{
+    width: 100%;
+    height: 200px;
+    margin-top: -18px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+#img1{
+    background-image: url(../img/foto27.jpg);
+    width: 397px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#img2{
+    background-image: url(../img/foto24.jpg);
+    width: 397px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#img3{
+    background-image: url(../img/foto25.jpg);
+    width: 397px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#img4{
+    background-image: url(../img/foto26.jpg);
+    width: 397px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+/* Estilos Main | Nuestras Productos*/
+
+main{
+    width: 100%;
+    height: 300px;
+    background-color: #303539;
+    margin-top: 10px;
+    position: relative;
+}
+
+#productos img{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    opacity: 0.4;
+    -webkit-transform:scale(1);
+    transform:scale(1);
+
+}
+
+.texto3{
+    position: absolute;
+    top:100px;
+    left:400px;
+}
+
+.texto3 h1{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.texto3 hr{
+    background-color: cyan;
+    height: 1px;
+    width: 400px;
+    position: absolute;
+    left:150px;
+}
+
+.texto4{
+    position:absolute;
+    top: 250px;
+    left: 200px;
+}
+
+.texto4 p{
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 30px;
+}
+
+
+/* -----------   Estilos Carrusel Bootstrap --------------------------*/
+
+#carrusel{
+    width: 100%;
+    height: 380px;
+    background-color: #303539;
+}
+.container{
+    margin: 250px;
+    margin-left:80px;
+    opacity: 0.7;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    background-color: #303539;
+}
+
+.column1{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+}
+
+.container-1{
+    margin: 250px;
+    opacity: 0.7;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    bottom: -250px;
+    left: 250px;
+}
+
+.column2{
+    position: relative;
+}
+
+.container-2{
+    margin: 250px;
+    opacity: 0.7;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    bottom: -250px;
+    left: 250px;
+    margin-right: 100px;
+}
+
+
+/* -----------------    Estilos Footer | Pie de Página -----------------------*/
+
+footer{
+    width:100%;
+    height: auto;
+    background-color: #303539;
+    position: relative;
+}
+
+
+/*--------- Estilos ID Horarios --------*/
+#horarios{
+    position: absolute;
+    top: 20px;
+    left:380px;
+    width: 25%;
+    height: 200px;
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 12px;
+
+}
+
+#horarios h1{
+    color:#F6CE29;
+    font-size: 20px;
+    text-align: center;
+}
+
+#horarios p{
+
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+
+#horarios p:hover{
+    color: #F6CE29;
+    font-size: 15px;
+}
+
+.ubicacion{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    width: 25%;
+}
+
+.ubicacion h1{
+    color: #F6CE29;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 20px;
+
+}
+
+.ubicacion span{
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Fredericka the Great', cursive;
+
+}
+
+.ubicacion i{
+    color: #F6CE29;
+
+}
+
+.ubicacion span:hover{
+    color: #F6CE29;
+}
+
+.ubicacion iframe{
+    margin-top: 10px;
+}
+
+.pagos{
+    position: absolute;
+    top: 20px;
+    left:750px;
+    width: 25%;
+    height: 200px;
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 12px;
+}
+
+.pagos h1{
+    color:#F6CE29;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.pagos img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+
+}
+
+
+.redes{
+    position: absolute;
+    top: 20px;
+    left:1111px;
+    width: 25%;
+    height: 200px;
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 12px;
+
+}
+
+.redes h1{
+    color: #F6CE29;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.redes img{
+    width: 45x;
+    height: 45px;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-top:10px;
+    margin-right: 20px;
+    justify-content:space-between;
+}
+
+.redes img:hover{
+    background-color: #F6CE29;
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+.logo img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 300px;
+    left: 700px;
+}
+
+ hr{
+    color: yellow;
+}
+
+.fusion-copyright-notice{
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 12px;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    margin-top: 20px;
+
+
+}
+
+
+
